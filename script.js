@@ -7,16 +7,15 @@ gridMaker(pixelsY, pixelsX);
 
 function gridMaker(pixelsY, pixelsX) {
 
-  let dimensions = String(100 / pixelsY) + "px";
-
   for (let i = 1; i <= pixelsY; i++) {
     for (let j = 1; j <= pixelsX; j++) {
       const div1 = document.createElement('div');
 
       div1.classList.add(`grid-item`);
-
-      div1.style.width = "10px";
-      div1.style.height = "10px";
+      let sizeX = 1 / pixelsX * 500;
+      let sizeY = 1 / pixelsY * 500;
+      div1.style.width = `${sizeX}px`;
+      div1.style.height = `${sizeY}px`;
 
       div1.style.gridArea = `${i} / ${j}`;
 
@@ -38,7 +37,7 @@ newGridButton.addEventListener(`click`, function(){
   while (container.hasChildNodes()) {
     container.removeChild(container.childNodes[0]);
   };
-  let numX = prompt("Please enter the width of your grid:", 4);
+  let numX = prompt("Please enter the height of your grid:", 4);
   while (numChecker(numX) === false) {
     numX = prompt("Please enter a number between 2 and 99.");
   }
