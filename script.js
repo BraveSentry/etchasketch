@@ -1,6 +1,6 @@
 const container = document.querySelector(`#container`);
 
-let pixels = 16;
+let pixels = 4;
 
 let dimensions = String(100 / pixels) + "px";
 
@@ -15,8 +15,6 @@ for (i = 1; i <= pixels; i++) {
 
     div1.style.gridArea = `${i} / ${j}`;
 
-    let diver = document.querySelector('.grid-item')
-
     div1.addEventListener("mouseover", function(){
         div1.classList.add(`hovered`);
     });
@@ -24,3 +22,11 @@ for (i = 1; i <= pixels; i++) {
     container.appendChild(div1);
   };
 };
+
+let button = document.querySelector(`button`);
+
+let div = document.querySelector(`div`);
+
+button.addEventListener(`click`, function(){
+  div.classList.toggle(`hovered`, false);
+});

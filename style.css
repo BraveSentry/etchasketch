@@ -23,7 +23,7 @@
 }
 
 .grid-item {
-  display: grid;
+  /* display: grid; */
   background-color: black;
   transition-duration: .07s;
   padding: 0;
