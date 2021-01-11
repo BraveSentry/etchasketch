@@ -23,10 +23,12 @@ for (i = 1; i <= pixels; i++) {
   };
 };
 
-let button = document.querySelector(`button`);
+let button = document.querySelector(`#resetGrid`);
 
-let div = document.querySelector(`div`);
+let divs = document.querySelectorAll(`div`);
 
 button.addEventListener(`click`, function(){
-  div.classList.toggle(`hovered`, false);
+  for (let k = 0; k < divs.length; k++) {
+    divs[k].classList.remove(`hovered`);
+}
 });
