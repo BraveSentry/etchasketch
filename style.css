@@ -1,0 +1,34 @@
+#container {
+  display: grid;
+  grid-area: "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  "auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto"
+  ;
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+  justify-content: start;
+}
+
+.grid-item {
+  display: grid;
+  background-color: black;
+  transition-duration: .07s;
+  padding: 0;
+}
+
+.hovered {
+  background-color: grey;
+}
